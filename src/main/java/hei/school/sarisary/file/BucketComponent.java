@@ -44,7 +44,7 @@ public class BucketComponent {
     return new FileHash(FileHashAlgorithm.NONE, null);
   }
 
-  private FileHash uploadFile(File file, String bucketKey) {
+  public FileHash uploadFile(File file, String bucketKey) {
     var request =
         UploadFileRequest.builder()
             .source(file)

@@ -1,12 +1,14 @@
+package hei.school.sarisary;
+import hei.school.sarisary.file.BucketComponent;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.time.Duration;
 
 @RestController
 public class BlackAndWhiteController {
